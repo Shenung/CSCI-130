@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Player Results</title>
+</head>
+<body>
+  <h1>This player: {{.Name}}</h1>
+{{if .Life}}
+  <h1>Is still Alive</h1>
+  <h1>Health: {{.Health}}</h1>
+{{else}}
+  <h1>Is Dead!</h1>
+  <h1>Health: {{.Health}}</h1>
+{{end}}
+</body>
+</html>
